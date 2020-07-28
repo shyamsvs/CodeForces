@@ -29,12 +29,8 @@ using namespace std;
 void solve(){
     ll a,b;
 	cin>>a>>b;
-	int count = 0;
-	while(a%b != 0){
-		a++;
-		count++;
-	}
-	cout<<count<<endl;
+	int ans = (a%b==0)?0:b-(a%b);
+	cout<<ans<<endl;
 	return;
 }
 
